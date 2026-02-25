@@ -14,7 +14,7 @@ import styled, { keyframes } from 'styled-components';
 import LoadingBar from "react-top-loading-bar";
 
 import { useMediaQuery } from 'react-responsive';
-import TextField from '@material-ui/core/TextField'
+import TextField from '@material-ui/core/TextField';
 import { colors } from '@material-ui/core';
 import { toast } from 'react-toastify';
 import { useHistory } from "react-router";
@@ -26,6 +26,7 @@ import { useScrollBy } from "react-use-window-scroll";
 import { Submit_Post_Survey, post_q4_1, post_q4_2, post_q4_3, post_q4_4, post_q4_5, post_info_1, post_q2_op2,post_q2_op3, post_q2_op4,post_q3_op2 , post_q3_op3 ,post_q3_op4 ,A_user_with , post_info_4 ,post_q8_op5 , post_q4_op2 ,post_q4_op3 , post_q4_op4,post_q4_op6 ,post_q5_op2  ,post_q5_op3 ,post_q5_op4 ,post_q5_op6,
 post_q6_op2 ,post_q6_op3 ,post_q6_op4 ,post_q6_op6 ,post_q7_op2 ,post_q7_op3 ,post_q7_op4 ,post_q7_op6 ,post_q8_op3 ,post_q8_op4 ,post_q8_op6 , post_q8_op7,  post_q9_op2, 
 post_q9_op3,post_q9_op4 ,post_q9_op6 ,  post_info_5,post_q10_op1 ,post_q10_op2,post_q10_op3 ,post_q10_op4  ,post_q11_op2 ,post_q11_op3 ,post_q11_op4 ,_op1 ,post_info_6, post_q16_op2 ,post_q16_op3 ,post_q16_op4 , post_info_8 } from '../../constants.js';
+
 import { post_info_3, post_info_0, post_info_2, q1_op1, q1_op2, q1_op3, q1_op4, q1_op5, q8_op7, q8_op6, disclaimor_1, dear_part_2, bitte_4, aimHEADING_5, aim_6, procedureHEADING_7, procedure_8, voluntaryHEADING_9, question0, name, voluntary_10, 
 other_11, dataprotHEADING_12, dataprot_13, datasharingHEADING_14, datasharing_15, retentionHEADING_16, retention_17, furtherHEADING_18, further_19, complaints_20, best_21, nme_22, q0_info, q0, welcome2, consentHEADING_23, 
 consent_24, weitere, jaa, neinn, heading_one, q1, ja2, nein2, q2, plzCon, screen, enony, note, q2_op1, q2_op2, q2_op3, q3, q3_op1, q3_op2, q3_op3, q3_op4, q3_op5, q3_op6, q3_op7, q4, q4_op1, q4_op2, q4_op3, q4_op4, q4_op5, q4_op6, q4_op7, q55, q5_op1, q5_op2,post_q13_op1,

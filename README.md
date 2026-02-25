@@ -1,82 +1,63 @@
-Website : [(https://socialapp.ijs.si/)](https://socialapp.ijs.si/)
-
-# TWON Social Application
+# TWON RKI case study application
 A MERN stack based social media application (MongoDB Express React Redux NodeJs).
 
-# Featurs included in this project:
+## Overview
+This tool allows researchers to run controlled social media experiments with real users in a realistic but fully managed environment. It is designed to study how people interact with scientific content, misinformation, and different communication strategies online.
 
-**Admin features:**
- - admin panel shows total number of post ,users, and comments.
- - admin can create, edit, and delete posts, users, and comments. 
- - admin can like, dislike comments, and posts. 
+In one example study conducted in Germany in collaboration with the Robert Koch Institute, the platform was used to examine two main topics: pre-bunking misinformation and communicating statistical uncertainty. The study was based on real social media posts previously developed by the institute. These posts focused on vaccines, including mRNA vaccines for pre-bunking scenarios and the Monkeypox vaccine for uncertainty communication.
 
-**user features:**
- - register and login users. 
- - pagination on every pages.
- - light and dark mode.
- - admin panel is included.
- - explore page to view other posts by random users.
- - profile page.
- - edit profile page user data.
- - password is stored in database in encrypted format with salt.
- - create posts.
- - like, dislike, and comment on posts.
- - like, and dislike a comment.
- - followings.
- - followers.
- - recording viewed posts by users.
- - recording read posts by users.
- - profile page shows user details and posts with following and followers menu.
+The study was conducted over several days in March 2025. Participants were recruited through Prolific and were required to be located in Germany, fluent in German, and have a high prior approval rate. More than 1,200 participants completed the study. They were randomly assigned to different groups, including control and treatment conditions, to test the effects of different messaging strategies.
 
+Overall, this platform enables researchers to design and evaluate social media interventions, conduct randomized experiments, compare different communication approaches, and collect structured interaction data. It provides a flexible and modular environment for studying online behavior in a controlled setting.
 
-**How to run this application**
-1. Make sure MongoDB is running on your system or online.
-2. Include MongoDB database link in .env file.
-3. Include public and private keys for push notifications.
-4. Clone this repository
-5. Open command line in the cloned folder,
-    - To install dependencies for backend, run  `npm install` in `/server` folder.
-    - To run backend type command `npm start` in main folder.
-    - To install dependencies for frontend , run  `npm install` in `/client` folder.
-    - To run frontend type command `npm run build` in `/client` folder.
-6.  Open  [localhost:3000](http://localhost:3000/)  in the browser.
- **And application will be up and running.**
+Website : [(https://socialapp.ijs.si/)](https://socialapp.ijs.si/)
 
-# Screenshots showcasing the desktop view:
-![login page](screenshots/2-Theme1And2-Login-Web.png)
-![registration page](screenshots/1-Theme1And2-Signup-Web.png)
+# Study Flow in the App
+1. Landing page
+2. Consent form
+3. Pre-survey
+4. Username choice
+5. Feed (participants must write at least 3 comments and give some likes)
+6. Post-survey
 
+### Flow Screenshots
+1. Landing page
+![landing page](screenshots/rki%20screenshots/landingpage.png)
 
-# The desktop view with dark mode:
-![home page](screenshots/3-Theme1-Home-Web.png)
-![post detail](screenshots/4-Theme1-Post-detail-Web.png)
-![profile page](screenshots/5-Theme1-Profile-Scroll1-Web.png)
-![profile page](screenshots/6-Theme1-Profile-Scroll2-Web.png)
+2. Consent form
+![consent form](screenshots/rki%20screenshots/consent_form.png)
+
+3. Pre-survey
+![pre-survey](screenshots/rki%20screenshots/presurvey.png)
+
+4. Username choice
+![username choice](screenshots/rki%20screenshots/username_choice.png)
+
+5. Feed
+![feed](screenshots/rki%20screenshots/feed.png)
+
+6. Post-survey
+![post-survey](screenshots/rki%20screenshots/postsurvey.png)
+
+# Project Structure
+The repository is organized into two main applications:
+- `server/`: Node.js + Express backend, API routes, controllers, models, middleware, and admin views.
+- `client/`: React frontend application, pages, components, context, and static assets.
+
+At the root:
+- `docker-compose.yml`: container orchestration.
+- `package.json`: root-level scripts/dependencies.
+- `README.md`: project documentation.
 
 
-# The desktop view with light mode:
-![home page](screenshots/7-Theme2-Home-Web.png)
-![post detail](screenshots/8-Theme2-Post-detail-Web.png)
-![profile page](screenshots/9-Theme2-Profile-Scroll1-Web.png)
-![profile page](screenshots/10-Theme2-Profile-Scroll2-Web.png)
-
-
-# The mobile view:
-![login page](screenshots/13-Theme2And1-Login-Mobile.jpg)
-![registration page](screenshots/11-Theme2And1-Signup-Scroll1-Mobile.jpg)
-![registration page](screenshots/12-Theme2And1-Signup-Scroll2-Mobile.jpg)
-
-# The mobile view with dark mode:
-![home page](screenshots/14-Theme1-Home-Mobile.jpg)
-![post detail](screenshots/15-Theme1-Post-Detail-Mobile.jpg)
-![profile page](screenshots/16-Theme1-Profile-Scroll1-Mobile.jpg)
-![profile page](screenshots/17-Theme1-Profile-Scroll2-Mobile.jpg)
-
-
-# The mobile view with light mode:
-![home page](screenshots/18-Theme2-Home-Mobile.jpg)
-![post detail](screenshots/19-Theme2-Post-Detail-Mobile.jpg)
-![profile page](screenshots/20-Theme2-Profile-Scroll1-Mobile.jpg)
-![profile page](screenshots/21-Theme2-Profile-Scroll2-Mobile.jpg)
+# How to Run
+1. Make sure MongoDB is available and configured.
+2. Install dependencies:
+    - Run `npm install` in `/server`.
+    - Run `npm install` in `/client`.
+3. Start backend:
+    - In `/server`, run `npm start`.
+4. Build frontend:
+    - In `/client`, run `npm run build`.
 
 
